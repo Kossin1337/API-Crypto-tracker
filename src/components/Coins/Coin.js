@@ -7,7 +7,7 @@ export const Coin = ({
   price,
   marketCap,
   marketCapRank,
-  volume,
+  symbol,
   totalVolume,
   priceChange,
 }) => {
@@ -20,9 +20,10 @@ export const Coin = ({
           <p className="coin-id">#{marketCapRank}</p>
           <img className="coin-img" src={image} alt={id} />
           <h1 className="coin-name">{name}</h1>
+          <p className="coin-symbol">{symbol.toUpperCase()}</p>
         </div>
         <div className="coin-data">
-          <p className="coin-price">${price}</p>
+          <p className="coin-price">${price.toLocaleString()}</p>
           <p className="coin-volume">${marketCap.toLocaleString()}</p>
           <p id="coin-percent" className={priceChangeIndicator}>
             {priceChange.toFixed(2)}%

@@ -32,6 +32,7 @@ export const Coins = ({ searchValue }) => {
             name,
             id,
             image,
+            symbol,
             current_price,
             market_cap_rank,
             market_cap,
@@ -42,6 +43,7 @@ export const Coins = ({ searchValue }) => {
             <Coin
               key={id}
               name={name}
+              symbol={symbol}
               image={image}
               price={current_price}
               id={market_cap_rank}

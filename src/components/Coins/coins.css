@@ -18,9 +18,18 @@
   border-bottom: 1px solid #dcdcdc;
 }
 
+.coin-row:hover {
+  background-color: #232323;
+}
+
 /* COIN HEADERS */
+.coin-headers {
+  border-bottom: 1px solid #dcdcdc;
+}
+
 .coin-headers h2 {
-  padding: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.75rem 0;
 }
 
 /* COIN STYLING */
@@ -33,7 +42,7 @@
 
 .coin-info {
   display: grid;
-  grid-template-columns: 2fr 2fr 8fr;
+  grid-template-columns: 2fr 2fr 8fr 2fr;
   align-items: center;
 }
 
@@ -50,6 +59,10 @@
 .coin-name {
   font-size: 1.4rem;
   text-align: left;
+}
+
+.coin-symbol {
+  text-align: right;
 }
 
 .coin-data {
