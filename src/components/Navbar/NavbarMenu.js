@@ -8,10 +8,10 @@ export const NavbarMenu = () => {
       </Link>
       <li className="menu-item">Favourites</li>
       <li className="menu-item">
-        Coin category <i class="fas fa-angle-down"></i>
+        Coin category <i className="fas fa-angle-down"></i>
       </li>
       <li className="menu-item">
-        USD <i class="fas fa-angle-down"></i>
+        USD <i className="fas fa-angle-down"></i>
       </li>
     </ul>
   );

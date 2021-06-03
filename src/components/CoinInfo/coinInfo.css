@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fefefe;
 }
 
 .currency-info {
@@ -13,11 +12,13 @@
   width: 80%;
   height: 100%;
   background-color: #121212;
+  border: 1px solid #fefefe;
+  border-radius: 25px;
 }
 
 .back-to-homepage {
   position: absolute;
-  top: 2rem;
+  top: 1rem;
   left: 2rem;
   color: #fefefe;
   transition: all 0.1s ease;
@@ -25,4 +26,20 @@
 
 .back-to-homepage:hover {
   color: lightgreen;
+}
+
+.add-to-favourites {
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 1.2rem;
+  background-color: #121212;
+  color: #fefefe;
+  outline: none;
+  border: none;
+}
+
+.add-to-favourites:hover {
+  color: #e6ff05;
 }

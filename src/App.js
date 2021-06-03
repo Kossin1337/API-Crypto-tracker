@@ -13,7 +13,7 @@ export const App = () => {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/currency/:id">
+        <Route path="/currency/:coinId">
           <CurrencyInfo />
         </Route>
       </Switch>

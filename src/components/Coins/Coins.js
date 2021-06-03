@@ -14,7 +14,7 @@ export const Coins = ({ searchValue }) => {
       .get(COIN_GECKO_URL)
       .then((response) => {
         setCoins(response.data);
-        console.log(response.data);
+        // console.log(response.data);
       })
       .catch((error) => {
         alert(`There is an error: ${error}, please try to refresh the page`);
@@ -46,6 +46,7 @@ export const Coins = ({ searchValue }) => {
               symbol={symbol}
               image={image}
               price={current_price}
+              coinId={id}
               id={market_cap_rank}
               marketCap={market_cap}
               marketCapRank={market_cap_rank}
