@@ -1,0 +1,28 @@
+.currency-info-wrapper {
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+}
+
+.currency-info {
+  position: relative;
+  padding: 1rem;
+  width: 80%;
+  height: 100%;
+  background-color: #121212;
+}
+
+.back-to-homepage {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: #fefefe;
+  transition: all 0.1s ease;
+}
+
+.back-to-homepage:hover {
+  color: lightgreen;
+}

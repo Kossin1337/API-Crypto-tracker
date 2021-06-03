@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Coin = ({
   name,
@@ -19,7 +20,9 @@ export const Coin = ({
         <div className="coin-info">
           <p className="coin-id">#{marketCapRank}</p>
           <img className="coin-img" src={image} alt={id} />
-          <h1 className="coin-name">{name}</h1>
+          <Link to={`/currency/${name}`}>
+            <h1 className="coin-name">{name}</h1>
+          </Link>
           <p className="coin-symbol">{symbol.toUpperCase()}</p>
         </div>
         <div className="coin-data">

@@ -46,6 +46,11 @@
   align-items: center;
 }
 
+.coin-info a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
 .coin-id {
   color: #dcdcdc;
   font-size: 0.85rem;
@@ -81,7 +86,7 @@
 
 /* price change indicator color */
 .green {
-  color: green;
+  color: lightgreen;
 }
 
 .red {

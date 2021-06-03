@@ -13,12 +13,25 @@
   align-items: center;
 }
 
+.navbar a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+Link {
+  text-decoration: none;
+}
+
 /* navigation logo */
 .navbar-logo {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.navbar-logo:hover logo-image {
+  transform: rotate(180deg);
 }
 
 .logo-image {
