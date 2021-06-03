@@ -1,23 +1,22 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Coins } from "./components/Coins/Coins";
+import { Home } from "./Pages/Home";
+import { CurrencyInfo } from "./Pages/CurrencyInfo";
 
 export const App = () => {
-  const [search, setSearch] = useState("");
   // const [page, setPage] = useState(1);
 
   return (
     <Router>
-      <div className="crypto-tracker">
-        <Navbar setSearch={setSearch} />
-        <Switch>
-          <Route path="/">
-            <Coins searchValue={search} />
-          </Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/currency/:id">
+          <CurrencyInfo />
+        </Route>
+      </Switch>
     </Router>
   );
 };
