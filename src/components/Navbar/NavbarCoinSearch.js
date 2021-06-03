@@ -5,7 +5,7 @@ export const NavbarCoinSearch = ({ handleSearch }) => {
 
   const handleChange = (event) => {
     setText(event.target.value);
-    handleSearch(text);
+    handleSearch(event.target.value);
   };
 
   return (

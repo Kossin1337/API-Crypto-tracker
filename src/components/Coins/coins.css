@@ -57,8 +57,13 @@
 }
 
 .coin-name {
+  cursor: pointer;
   font-size: 1.4rem;
   text-align: left;
+}
+
+.coin-name:hover {
+  text-decoration: underline;
 }
 
 .coin-symbol {

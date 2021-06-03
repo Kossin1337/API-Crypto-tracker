@@ -5,6 +5,7 @@ import { NavbarMenu } from "./NavbarMenu";
 import { NavbarCoinSearch } from "./NavbarCoinSearch";
 
 export const Navbar = ({ setSearch }) => {
+  
   const handleSearch = (coinSearch) => {
     setSearch(coinSearch);
   };
