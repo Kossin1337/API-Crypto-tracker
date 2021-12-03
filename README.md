@@ -1,8 +1,10 @@
-xxx is a Cryptocurrency price tracker app ...
+CoinREX is a web application that allows the user to track and analyze the price of cryptocurrencies.  User can create their account, manage favorite cryptocurrencies and create their own portfolio.  The application utilizes CoinGecko API in order to display the most up-to-date information about cryptocurrencies to the user.
 
 TODO:
-Navbar: logo, change currency, menu
-Separate logic of components
+Login functionality (Firebase auth)
+User panel and user settings
+Allow the user to make a custom portfolio of cryptocurrencies their own
+Chart.js for displaying the price chart data
 
 # Getting Started with Create React App
 
